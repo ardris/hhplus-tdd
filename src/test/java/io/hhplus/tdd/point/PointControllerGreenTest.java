@@ -81,7 +81,7 @@ class PointControllerGreenTest {
 
     @Test
     @DisplayName("포인트 조회 성공")
-    void get_point_success() throws Exception {
+    void get_point_success() throws Exception {    
         long userId = 1L;
         long ts = 123456789L;
 

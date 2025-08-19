@@ -122,7 +122,7 @@ class PointControllerRedTest {
     // *  제공 메소드 내 크게 에러를 잡을 게 없어서 낭비 테스트이지 않을까 함. 
     @Test
     @DisplayName("GET /point/{id} ")
-    void get_point_red_error() throws Exception {
+    void get_point_red_error() throws Exception {    
         long userId = 1L;
         given(utp.selectById(userId)).willReturn(new UserPoint(userId, 1300L, 111111111));
 
