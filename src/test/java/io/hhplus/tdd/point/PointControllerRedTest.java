@@ -107,7 +107,7 @@ class PointControllerRedTest {
             .andExpect(status().isOk())
             .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
             .andExpect(jsonPath("$.id").value(1))
-            .andExpect(jsonPath("$.point").value(4_600))
+            .andExpect(jsonPath("$.point").value(4_600)) 
             .andExpect(jsonPath("$.updateMillis").value((int)(now + 1)));
 
             // 부가 검증 성공하면 로그에 안남네여

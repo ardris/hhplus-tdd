@@ -61,7 +61,7 @@ class PointControllerGreenTest {
         long userId = 1L;
         long now = System.currentTimeMillis();
 
-        given(utp.selectById(userId))
+        given(utp.selectById(userId)) 
                 .willReturn(new UserPoint(userId, 500L, now));
         given(utp.insertOrUpdate(eq(userId), eq(300L)))
                 .willReturn(new UserPoint(userId, 300L, now + 1));
